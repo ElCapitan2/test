@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SurveyTool326</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <![endif]-->
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span3">
+				<h2>Wirres deutsches Volksgut ...</h2>
+				Wie schön! wenn aus vergang'nen Zeiten
+				Ein Jugendhauch den Geist bewegt,
+				Und leis' an längst verklung'ne Saiten
+				Des viel bewegten Herzens schlägt!
+				Ist es ein Traum aus frühen Tagen?
+				Ist es der Kindheit Sonnenblick?
+				Ich fühl' es tief und kann's nicht sagen,
+				Ich fühle erster Tage Glück.
+				Was mir dazwischen hingeflossen,
+				Vergessen ist es wie das Heut;
+				Was mich umgibt, wird übergossen
+				Vom Zauber der Vergangenheit.
+			</div>
+			<div class="span1"></div>
+			<div class="span8">
+				<%= yield %>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
